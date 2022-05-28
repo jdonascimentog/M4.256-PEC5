@@ -1,0 +1,29 @@
+.card {
+  margin-top: 10px;
+  width: 500px;
+}
+
+.card mat-card-header {
+  padding-bottom: 1.3rem;
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.badge {
+  color: black;
+  margin-right: 5px;
+  margin-left: 5px;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.post-list {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+mat-card-actions > button {
+  margin-right: 0.5em;
+}

@@ -1,0 +1,31 @@
+<div class="wrapper" fxLayout="row">
+  <div fxFlex="80%" *ngIf="pokemon">
+    <h1>{{ pokemon.name }}</h1>
+    <div class="m-b-25">
+      <img src="{{ pokemon.sprites.back_default }}" alt="back" />
+      <img src="{{ pokemon.sprites.front_default }}" alt="front" />
+    </div>
+    <div *ngIf="!showDetail" class="m-b-25">
+      <button mat-mini-fab color="primary" (click)="showDetails()">
+        <mat-icon>visibility</mat-icon> Show all details
+      </button>
+    </div>
+    <div *ngIf="showDetail" class="m-b-25">
+      <button mat-mini-fab color="primary" (click)="hideDetails()">
+        <mat-icon>visibility_off</mat-icon> Hide all details
+      </button>
+    </div>
+    <div *ngIf="showDetail">
+      <mat-tab-group>
+        <mat-tab label="Id"> {{ pokemon.id }} </mat-tab>
+        <mat-tab label="Height">{{ pokemon.height }} </mat-tab>
+        <mat-tab label="Weight"> {{ pokemon.weight }} </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+  <div fxFlex="20%">
+    <button mat-mini-fab color="primary" (click)="goBack()">
+      <mat-icon>spoke</mat-icon> Return to list
+    </button>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+.wrapper {
+  margin: 5rem auto;
+  width: 50vw;
+}
+h1 {
+  text-transform: uppercase;
+}
+.m-b-25 {
+  margin-bottom: 25px;
+}

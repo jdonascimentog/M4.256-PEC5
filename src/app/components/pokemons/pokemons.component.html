@@ -1,0 +1,35 @@
+<div
+  class="post-list"
+  fxLayout="column wrap"
+  fxLayoutAlign="center center"
+  fxLayoutGap="16px grid"
+>
+  <h1>List All pokemons</h1>
+  <div class="spinner">
+    <div fxLayout="row" fxLayoutAlign="center center" *ngIf="processing">
+      <mat-spinner diameter="150"></mat-spinner>
+    </div>
+  </div>
+  <div [@cardsAnimation]="animationState" *ngIf="pokemonList">
+    <div
+      fxLayout="row"
+      *ngFor="let pokemon of pokemonList.results"
+      class="post_card"
+    >
+      <div fxFlex="25%" class="card">
+        <mat-card>
+          <mat-card-header>
+            {{ pokemon.name }}
+          </mat-card-header>
+          <mat-card-content>
+            <div>
+              <button mat-mini-fab color="primary" (click)="goTo(pokemon.name)">
+                <mat-icon>catching_pokemon</mat-icon> View details
+              </button>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</div>
