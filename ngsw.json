@@ -1,0 +1,96 @@
+{
+  "configVersion": 1,
+  "timestamp": 1653758503370,
+  "index": "C:/Program Files/Git/PEC5/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "C:/Program Files/Git/PEC5/favicon.ico",
+        "C:/Program Files/Git/PEC5/index.html",
+        "C:/Program Files/Git/PEC5/main.8815c481571d3a23.js",
+        "C:/Program Files/Git/PEC5/manifest.webmanifest",
+        "C:/Program Files/Git/PEC5/polyfills.7fe88c8ccff2f3f3.js",
+        "C:/Program Files/Git/PEC5/runtime.095b9c112248d4a7.js",
+        "C:/Program Files/Git/PEC5/styles.a36b77ae9fdacf0c.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "C:/Program Files/Git/PEC5/assets/icons/icon-128x128.png",
+        "C:/Program Files/Git/PEC5/assets/icons/icon-144x144.png",
+        "C:/Program Files/Git/PEC5/assets/icons/icon-152x152.png",
+        "C:/Program Files/Git/PEC5/assets/icons/icon-192x192.png",
+        "C:/Program Files/Git/PEC5/assets/icons/icon-384x384.png",
+        "C:/Program Files/Git/PEC5/assets/icons/icon-512x512.png",
+        "C:/Program Files/Git/PEC5/assets/icons/icon-72x72.png",
+        "C:/Program Files/Git/PEC5/assets/icons/icon-96x96.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "pokemon-api",
+      "patterns": [
+        "https:\\/\\/https:\\/\\/pokeapi\\.co\\/api\\/v2\\/.*"
+      ],
+      "strategy": "freshness",
+      "maxSize": 30,
+      "maxAge": 3600000,
+      "timeoutMs": 1000,
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "version": 1
+    }
+  ],
+  "hashTable": {
+    "C:/Program Files/Git/PEC5/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "C:/Program Files/Git/PEC5/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "C:/Program Files/Git/PEC5/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "C:/Program Files/Git/PEC5/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "C:/Program Files/Git/PEC5/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "C:/Program Files/Git/PEC5/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "C:/Program Files/Git/PEC5/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "C:/Program Files/Git/PEC5/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "C:/Program Files/Git/PEC5/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "C:/Program Files/Git/PEC5/index.html": "2684ded15fe43dce1fc9886f5c31658d652fe219",
+    "C:/Program Files/Git/PEC5/main.8815c481571d3a23.js": "b5afb94bc990322178e9cdb01afaec1717a237c4",
+    "C:/Program Files/Git/PEC5/manifest.webmanifest": "2b0063736470895e481ed03761a4a29ba304309d",
+    "C:/Program Files/Git/PEC5/polyfills.7fe88c8ccff2f3f3.js": "f468d5ecb7c993ea56984e7192b7d73a57fb1d6d",
+    "C:/Program Files/Git/PEC5/runtime.095b9c112248d4a7.js": "a3f3cdf65cfc4f5f49c45bfd591dc513b1b3cbcf",
+    "C:/Program Files/Git/PEC5/styles.a36b77ae9fdacf0c.css": "93df24cb16be30b077d727fe169edba826ac303a"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
